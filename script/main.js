@@ -78,6 +78,7 @@ function playerMove(playerChoice) {
         rock.disabled = true;
         scissors.disabled = true;
     } else if (state.computerScore == state.countRound) {
+        award.classList.toggle('special');
         log('GAME OVER! ');
         paper.disabled = true;
         rock.disabled = true;

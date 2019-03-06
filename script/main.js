@@ -48,7 +48,7 @@ scissors.addEventListener('click', function () {
     playerMove('scissors');
 });
 
-//funkcja losująca liczbę
+//generate random Number
 function generateComputerMove() {
     var computerChoise = ['rock', 'paper', 'scissors'];
     var computerMove = Math.floor(Math.random() * 3);
@@ -59,7 +59,7 @@ function playerMove(playerChoice) {
 
     var computerMove = generateComputerMove();
 
-    console.log(playerChoice);
+    //console.log(playerChoice);
 
     if (playerChoice === computerMove) {
         log('Tie');
